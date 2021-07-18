@@ -1,41 +1,60 @@
 <template>
 	<view class="content">
-        <image class="logo" src="../../static/logo.png"></image>
+		<u-navbar :is-back="false" :background="{ background: Config.primaryBackgroundColor }">
+			<view class="header">
+				<view class="logo">
+					<u-image height="34px" width="120px" src="@/static/images/douyin_logo.svg"></u-image>
+				</view>
+				<view class="search-bar">
+					<u-search
+						placeholder="搜索视频和用户"
+						v-model="query"
+						@search="onSearch"
+						:show-action="false"></u-search>
+				</view>
+				<view class="actions">
+					<text>actions</text>
+				</view>
+			</view>
+		</u-navbar>
 		<view>
             <text class="title">{{title}}</text>
         </view>
+		<app-tabbar />
 	</view>
 </template>
 
-<script lang="ts">
-    import Vue from 'vue';
-	export default Vue.extend({
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+<script lang="ts" src="./Index.ts"></script>
 
-		},
-		methods: {
+<style lang="scss" scoped>
+	$margin-header: 10px;
+	$width-header-search: 120px;
+	$width-header-actions: 70px;
 
-		}
-	});
-</script>
-
-<style>
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
+		.row {
+			width: 100%;
+		}
+		.header {
+			display: flex;
+			height: 100%;
+			justify-content: space-between;
+			align-items: center;
+			margin-left: $margin-header;
+			.logo {
+				width: $width-header-search;
+			}
+			.search-bar {
+				width: calc((100% - #{$width-header-search + $width-header-actions}));
+			}
+			.actions {
+				width: $width-header-actions;
+			}
+		}
 	}
 
 	.text-area {

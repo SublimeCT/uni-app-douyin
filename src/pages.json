@@ -1,16 +1,63 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/index/Index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "play"
+			}
+		},
+		{
+			"path": "pages/explor/Explor",
+			"style": {
+				"navigationBarTitleText": "explor"
+			}
+		},
+		{
+			"path": "pages/about/About",
+			"style": {
+				"navigationBarTitleText": "about",
+				"enablePullDownRefresh": true
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/Index",
+				"iconPath": "play-right",
+				"selectedIconPath": "play-right-fill",
+				"text": "play"
+			},
+			{
+				"pagePath": "pages/explor/Explor",
+				"iconPath": "list-dot",
+				"selectedIconPath": "list",
+				"text": "explorer"
+			},
+			{
+				"pagePath": "pages/about/About",
+				"iconPath": "info-circle",
+				"selectedIconPath": "info-circle-fill",
+				"text": "about"
+			}
+		]
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "抖音",
+		"navigationBarBackgroundColor": "transparent",
+		"navigationBarShadow": {
+			"colorType": "grey"
+		},
 		"backgroundColor": "#F8F8F8"
 	}
 }
