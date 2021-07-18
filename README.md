@@ -1,4 +1,4 @@
-# uni-app-ts
+# uni-app-douyin
 
 ## Project setup
 ```
