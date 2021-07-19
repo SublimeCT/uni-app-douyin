@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 import { Config } from '@/models/Config'
 import AppTabbar from '@/components/AppTabbar/Index.vue'
+import VideoList from '@/components/VideoList/Index.vue'
 
 @Component({
-    components: { AppTabbar }
+    components: { AppTabbar, VideoList }
 })
 export default class IndexPage extends Vue {
     Config = Config

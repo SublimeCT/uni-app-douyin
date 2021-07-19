@@ -18,7 +18,8 @@
 			</view>
 		</u-navbar>
 		<view>
-            <text class="title">{{title}}</text>
+			<text>body</text>
+            <video-list />
         </view>
 		<app-tabbar />
 	</view>

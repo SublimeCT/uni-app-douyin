@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "update:videos": "node scripts/update_videos.js",
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
     "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
@@ -58,6 +59,7 @@
     "@dcloudio/uni-quickapp-webview": "^2.0.0-31920210609001",
     "@dcloudio/uni-stat": "^2.0.0-31920210609001",
     "@vue/shared": "^3.0.0",
+    "class-transformer": "^0.4.0",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
@@ -93,6 +95,7 @@
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
     "sass-loader": "^10.2.0",
+    "ts-node": "^10.1.0",
     "typescript": "^3.0.0",
     "vue-template-compiler": "^2.6.11"
   },
