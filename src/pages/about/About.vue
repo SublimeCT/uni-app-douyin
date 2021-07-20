@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view>
-            <text class="title">explor page</text>
+            <web-view :src="src"></web-view>
         </view>
 		<app-tabbar />
 	</view>

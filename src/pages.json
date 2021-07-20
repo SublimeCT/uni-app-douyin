@@ -18,7 +18,7 @@
 		{
 			"path": "pages/about/About",
 			"style": {
-				"navigationBarTitleText": "about"
+				"navigationBarTitleText": "about(app: github, h5: uview)"
 			}
 		}
 	],
