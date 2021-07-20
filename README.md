@@ -8,4 +8,5 @@
 页面 | 截图
 --- |---
 Index | ![douyin_screen_index.png](https://i.loli.net/2021/07/20/G9BaoIVtNrJ3xsy.png)
+Video Details | ![douyin_screen_video_details.png](https://i.loli.net/2021/07/20/JwKTItRNscxy7mb.jpg)
 Explor | ![douyin_screen_explor.png](https://i.loli.net/2021/07/20/bYrZDKitqFzfTXJ.png)

@@ -5,7 +5,14 @@
 			"style": {
 				"navigationStyle": "custom",
 				"navigationBarTextStyle": "white",
-				"navigationBarTitleText": "play",
+				"navigationBarTitleText": "video list",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/VideoDetails",
+			"style": {
+				"navigationBarTitleText": "video",
 				"enablePullDownRefresh": true
 			}
 		},

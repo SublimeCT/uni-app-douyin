@@ -1,3 +1,5 @@
+import { Video } from "@/models/Video"
+import { MutationTree } from "vuex"
 import BaseModule from "../BaseModule"
 
 export class AppModuleState {
@@ -22,10 +24,16 @@ export class AppModuleState {
             text: 'about',
         }
     ]
+    video: Video = new Video()
 }
 
 export class AppModule extends BaseModule<AppModuleState> {
     state: AppModuleState = new AppModuleState()
+    mutations?: MutationTree<AppModuleState> = {
+        setVideo(state: AppModuleState, video: Video) {
+            state.video = video
+        }
+    }
 }
 
 export default new AppModule()

@@ -29,4 +29,12 @@ export default class IndexPage extends Vue {
         this.videos = Video.getVideos()
         console.log(this.videos, this.videoRows)
     }
+    onClickVideo(video: Video) {
+        this.$store.commit('app/setVideo', video)
+        uni.navigateTo({
+            url: '/pages/index/VideoDetails',
+            fail: console.warn,
+            animationType: 'slide-in-bottom'
+        })
+    }
 }
