@@ -22,4 +22,10 @@ export default class IndexPage extends Vue {
         })
         uni.navigateTo({ url: '/pages/explor/Explor' })
     }
+    onPullDownRefresh() {
+        (this.$refs.videos as any).init()
+        setTimeout(() => {
+            uni.stopPullDownRefresh()
+        }, 700);
+    }
 }

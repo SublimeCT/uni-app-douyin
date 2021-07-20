@@ -13,13 +13,12 @@
 						:show-action="false"></u-search>
 				</view>
 				<view class="actions">
-					<text>actions</text>
+					<u-icon name="zhuanfa" size="40"></u-icon>
 				</view>
 			</view>
 		</u-navbar>
 		<view>
-			<text>body</text>
-            <video-list />
+            <video-list ref="videos" />
         </view>
 		<app-tabbar />
 	</view>
@@ -54,6 +53,10 @@
 			}
 			.actions {
 				width: $width-header-actions;
+				display: flex;
+				justify-content: flex-end;
+				height: 100%;
+				padding-right: 10px;
 			}
 		}
 	}

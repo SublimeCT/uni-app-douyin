@@ -5,7 +5,8 @@
 			"style": {
 				"navigationStyle": "custom",
 				"navigationBarTextStyle": "white",
-				"navigationBarTitleText": "play"
+				"navigationBarTitleText": "play",
+				"enablePullDownRefresh": true
 			}
 		},
 		{
@@ -17,8 +18,7 @@
 		{
 			"path": "pages/about/About",
 			"style": {
-				"navigationBarTitleText": "about",
-				"enablePullDownRefresh": true
+				"navigationBarTitleText": "about"
 			}
 		}
 	],
