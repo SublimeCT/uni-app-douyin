@@ -6,7 +6,7 @@
                 class="video-col"
                 :key="k"
                 :span="columnSpan">
-                <div class="card" :hover-class="hover">
+                <div class="card">
                     <view class="header">
                         <u-image class="cover" width="100%" border-radius="6px" height="140px" :src="v.cover"></u-image>
                         <view class="video-stat">
