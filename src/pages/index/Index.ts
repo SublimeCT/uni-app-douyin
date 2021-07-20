@@ -28,4 +28,25 @@ export default class IndexPage extends Vue {
             uni.stopPullDownRefresh()
         }, 700);
     }
+    onClickHeaderIcon() {
+        // #ifdef APP-PLUS
+        plus.runtime.openURL(
+            'https://www.douyin.com/',
+            err => {
+                uni.showToast({
+                    title: 'err: ' + err,
+                    icon: 'error',
+                    mask: true
+                })
+            },
+        )
+        // #endif
+        // #ifndef APP-PLUS
+        uni.showToast({
+            title: '哎呦, 好疼',
+            icon: 'success',
+            mask: true
+        })
+        // #endif
+    }
 }

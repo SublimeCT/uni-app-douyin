@@ -13,7 +13,7 @@
 						:show-action="false"></u-search>
 				</view>
 				<view class="actions">
-					<u-icon name="zhuanfa" size="40"></u-icon>
+					<u-icon name="zhuanfa" @click="onClickHeaderIcon" size="40"></u-icon>
 				</view>
 			</view>
 		</u-navbar>
